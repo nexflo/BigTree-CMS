@@ -132,7 +132,7 @@
 	$success = false;
 	$installed = false;
 
-	if (count($_POST) && !($db && $host && $user && $password && $cms_user && $cms_pass)) {
+	if (count($_POST) && !($db && $host && $user && $cms_user && $cms_pass)) {
 		$error = "Errors found! Please fix the highlighted fields and submit the form again.";
 	} elseif (count($_POST)) {
 		if ($write_host && $write_user && $write_password) {
